@@ -12,9 +12,9 @@ services:
     environment:
       - GEOSERVER_ADMIN_USER=admin
       - GEOSERVER_ADMIN_PASSWORD=password1234
-    postgis:
-      image: postgis/postgis
-      ports:
-        - 5432:5432
-      environment:
-        - POSTGRES_PASSWORD=password
+  postgis:
+    image: postgis/postgis
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
